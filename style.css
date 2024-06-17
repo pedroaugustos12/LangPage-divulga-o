@@ -1,0 +1,129 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('assents/imagens/bg-desktop.png');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid white;
+    margin-bottom: 20px;
+}
+
+#redirect-link {
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+
+.change-bg-btn {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #00000000;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.change-bg-btn i {
+    display: none;
+}
+
+.change-bg-btn .fa-sun {
+    display: inline;
+    color: yellow;
+}
+
+.change-bg-btn.active .fa-sun {
+    display: none;
+}
+
+.change-bg-btn.active .fa-moon {
+    display: inline;
+    color: black;
+}
+
+#divulgacao {
+    margin-bottom: 20px;
+}
+
+#divulgacao a {
+    display: block;
+    color: #fff;
+    font-size: 22px;
+    margin: 5px 0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#divulgacao label {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to right, rgba(88, 44, 88, 0.26), rgba(179, 78, 179, 0.582)); 
+    padding: 10px 200px;
+    border-radius: 15px;
+    margin: 15px;
+}
+
+#divulgacao.active label {
+    background: linear-gradient(to right, rgba(105, 154, 211, 0.5), rgba(154, 239, 219, 0.534)); 
+}
+
+#divulgacao.active a:hover{
+    color: black;
+}
+
+#divulgacao a:hover {
+    color: #0ba55d;
+}
+
+#social-icons {
+    display: flex;
+    gap: 55px;
+}
+
+#social-icons a {
+    margin-top: 18px;
+    color: white;
+    font-size: 30px;
+    transition: color 0.3s;
+}
+
+#social-icons a:hover {
+    color: #2d6a4f;
+}
+
+#social-icons.active a:hover {
+    color: #000;
+}
